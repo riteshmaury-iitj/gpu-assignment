@@ -24,4 +24,3 @@ CPU baseline (single core, gcc -O3) is measured and included; GPU labels + stati
 **Still to fill in before submission:** run `07_Colab_Notebook` on a T4, download `benchmark_T4.csv`, `benchmark_T4_summary.csv`,
 `fig5_gpu_benchmark.png` into `08_Results_and_Figures/`, and paste the GPU column + speed-ups into the report table (Section 8.2);
 confirm the contribution split.
-
