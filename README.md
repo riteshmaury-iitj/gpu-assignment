@@ -21,14 +21,6 @@
 |---|---|---|
 | GitHub repository | https://github.com/riteshmaury-iitj/gpu-assignment | Live — public |
 | Colab notebook (live CUDA lab, T4) | https://colab.research.google.com/drive/19ZL9M_L7r8LkQH4GNw7onE1wsR_mhVQL | Live — runs end to end on a T4 |
-| Kaggle notebook | — | Not applicable |
-| Hugging Face model | — | Not applicable — the project trains no model |
-| Docker image | — | Not applicable — no container is shipped |
-| W&B dashboard / report | — | Not applicable — no Weights & Biases runs are recorded |
-
-The four "not applicable" rows have no counterpart in this source tree. If the submission template requires them, the artefacts have to be produced first (a Kaggle notebook that compiles and runs the CUDA lab on a T4, a Docker image wrapping the `nvcc` build and the verification matrix, W&B logging of the sweep in `python/benchmark.py`). Do not link a bare host domain in place of a missing artefact.
-
-The report, handbook, 18-slide presentation, narrated video, Colab notebook, browser demo, results CSVs and guides travel inside the submission archive (`01_Report` … `09_Guides`) and need no external link.
 
 ---
 
@@ -483,6 +475,10 @@ The spread is consistent with ordinary Colab run-to-run variation on shared hard
 4. **A GPU-free static verification pipeline** — NVRTC device compilation, clang host-only type-checking, and a PTX audit confirming `atom.global.min.s32` and `atom.global.add.u64` were actually emitted.
 5. **Scope-separated timing with no mixed-scope speed-ups**, a published workload (`shapes`) on which the GPU loses, and a same-algorithm serial column that separates "parallelism helped" from "we picked a weaker baseline".
 
+## Skills demonstrated
+
+CUDA programming · GPU parallel algorithms · device atomics and memory ordering · parallel prefix sum · union-find · C/C++ · Python · image processing · 8-connected CCL · iterative algorithms · convergence detection · CPU/GPU comparison design · benchmark methodology and timing scopes · Nsight profiling · test-harness design · numerical validation · Git/GitHub · technical documentation.
+
 ---
 
 ## Known issues
@@ -545,8 +541,8 @@ No open-source license is confirmed for this repository. Public visibility alone
 7. Harris, Sengupta & Owens, "Parallel prefix sum (scan) with CUDA," in *GPU Gems 3*, ch. 39, 2007.
 8. He, Chao & Suzuki, "A run-based two-scan labeling algorithm," *IEEE Trans. Image Processing*, 2017.
 9. Gonzalez & Woods, *Digital Image Processing*, 4th ed., Pearson, 2018.
-10. NVIDIA, *CUDA C++ Programming Guide*.
-11. SciPy `ndimage.label` documentation.
+10. NVIDIA, [*CUDA C++ Programming Guide*](https://docs.nvidia.com/cuda/cuda-c-programming-guide/).
+11. SciPy, [`ndimage.label` documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.label.html).
 
 ---
 
