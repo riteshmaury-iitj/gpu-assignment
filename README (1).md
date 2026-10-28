@@ -15,12 +15,7 @@ Team: Ritesh Maury (G25AIT2087) · Shrikrishna Tripathi (G25AIT2103) · Alok Sah
 |---|---|---|
 | GitHub repository | https://github.com/riteshmaury-iitj/gpu-assignment | Live — public |
 | Colab notebook (live CUDA lab, T4) | https://colab.research.google.com/drive/19ZL9M_L7r8LkQH4GNw7onE1wsR_mhVQL | Live — runs end to end on a T4 |
-The report, handbook, 18-slide presentation, narrated video, Colab notebook, browser demo, results CSVs and guides travel inside the submission archive (`01_Report` … `09_Guides`) and need no external link.
-
----
-
 ## Overview
-
 Connected-Component Labeling (CCL) groups adjacent foreground pixels in a binary image into distinct objects. This project implements an 8-connected CCL pipeline in CUDA C/C++, with an independent single-threaded CPU baseline, a serial twin that compiles the same per-pixel source as the kernels, and Python tools for image generation, verification, visualization and benchmarking.
 
 For each foreground component the output is a compact integer label, area, centroid and axis-aligned bounding box. This is an educational implementation, not a production medical-imaging or vision system.
